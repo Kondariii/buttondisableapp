@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,10 +24,12 @@ public class MainActivity extends AppCompatActivity {
             liczbaKlikniec++;
             buttonDisable.setEnabled(false);
             licznik.setText("Liczba kliknięć: " + liczbaKlikniec);
+            Toast.makeText(MainActivity.this, "Duży przycisk został wyłączony", Toast.LENGTH_SHORT).show();
         });
 
         buttonEnable.setOnClickListener(v -> {
             buttonDisable.setEnabled(true);
+            Toast.makeText(MainActivity.this, "Duży przycisk został aktywowany", Toast.LENGTH_SHORT).show();
         });
     }
 }
