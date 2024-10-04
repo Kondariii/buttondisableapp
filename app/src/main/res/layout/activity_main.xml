@@ -6,6 +6,7 @@
     android:gravity="center"
     android:padding="16dp">
 
+
     <TextView
         android:id="@+id/licznik"
         android:layout_width="wrap_content"
@@ -16,11 +17,12 @@
 
     <Button
         android:id="@+id/buttonDisable"
-        android:layout_width="321dp"
-        android:layout_height="138dp"
-        android:text="Kliknij mnie!"
-        android:textSize="26sp"
-        android:backgroundTint="@android:color/holo_red_dark" />
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="Wciśnij przycisk"
+        android:fontFamily="sans-serif"
+        android:textSize="30sp"
+        android:backgroundTint="@android:color/black" />
 
     <Button
         android:id="@+id/buttonEnable"
@@ -28,7 +30,8 @@
         android:layout_height="77dp"
         android:layout_marginTop="20dp"
         android:text="Aktywuj przycisk"
+        android:fontFamily="sans-serif"
         android:textSize="20sp"
-        android:backgroundTint="@android:color/holo_red_light" />
+        android:backgroundTint="@android:color/black" />
 
 </LinearLayout>
